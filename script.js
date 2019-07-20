@@ -114,20 +114,15 @@ let products =[
 
 let output = "";
 products.forEach(function(products){
-output += `<img style="width: 400px; display: inline;" src =>
-<p> ${products.pname}</p>
-<a href="${products.url}">Click to buy</a>
-<div class="card" style="width: 18rem;">
+output += `<div class="card" style="width: 18rem;"><a href="${products.url}"<a href="#" class="btn btn-primary">Click to buy</a>
   <img src="${products.imgurl}" class="card-img-top" alt="${products.imgurl}">
   <div class="card-body">
     <h5 class="card-title">Description</h5>
     <p class="card-text">Items are refundable within 2 days.</p>
-    <a href="#" class="btn btn-primary"></a>
+	
   </div>
 </div>`
 
 })
-
-
 
 document.getElementById('container').innerHTML = output;

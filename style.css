@@ -1,9 +1,24 @@
-*{
-    
-    margin:0px;
-    padding:0px;
-}
+
 body {
-    padding: 40px;
-    background-image: url("Img/main.jpg");
+    padding: 20px;
+    background-image:url("Img/main.jpg");
+}
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+img{
+
+    height: 300px
+    
+}
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scalex(-1);
+  
 }
